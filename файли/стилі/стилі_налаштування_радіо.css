@@ -1,0 +1,45 @@
+.noteTable {
+    display: table;
+    font-family: consolas;
+    font-size: small;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.noteTable tbody {
+    display: table-cell;
+    padding: 2px;
+}
+
+.noteTable tbody tr td {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/* Відсутпи таблиці-прикладу */
+
+.noteExampleTable tbody tr td {
+    padding: 0px 1px 0px 2px;
+}
+
+/* Бордюри середини таблиці нот */
+
+.noteMiddle {
+    padding-top: 2px;
+    border-left: 1px solid #767676;
+    border-right: 1px solid #767676;
+    background: #efefef;
+}
+
+.noteBottom {
+    border-bottom: 1px solid #767676;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.noteTop {
+    border-top: 1px solid #767676;
+    padding-top: 0px;
+    border-radius: 3px 3px 0px 0px;
+}

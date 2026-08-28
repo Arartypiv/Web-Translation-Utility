@@ -1,0 +1,250 @@
+/* Indicators */
+#infoboxIndicators {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    color: white;
+    bottom: 28px;
+    width: 100%;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicator.active {
+    background-color: white;
+}
+
+
+
+
+
+/* Окремі налаштування тіл */
+.sun {
+    background: linear-gradient(to bottom, #f2e530 0%, #e57d44 100%);
+    border: 3px solid #b8470b;
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.sun span {
+    bottom: -5px;
+}
+
+.mercury {
+    background: linear-gradient(to bottom, #d1b29a 0%, rgb(158, 116, 65) 100%);
+    border: 3px solid rgb(132, 94, 45);
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.mercury span {
+    bottom: -4px;
+}
+
+.venus {
+    background: linear-gradient(to bottom, #ffba31 0%, #98600d 100%);
+    border: 3px solid #664703;
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.venus span {
+    bottom: -7px;
+}
+
+.earth {
+    background: linear-gradient(to bottom, #22cae8 0%, #224daa 100%);
+    border: 3px solid rgb(6, 39, 91);
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.earth span {
+    bottom: -6px;
+}
+
+.moon {
+    background: linear-gradient(to bottom, #999 0%, #666 100%);
+    border: 3px solid #333;
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.moon span {
+    bottom: -5px;
+}
+
+.mars {
+    background: linear-gradient(to bottom, #f06a3c 0%, #6c3c34 100%);
+    border: 3px solid #402622;
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.mars span {
+    bottom: -7px;
+}
+
+.ceres {
+    background: linear-gradient(to bottom, hsl(10, 15%, 60%) 0%, hsl(10, 15%, 40%) 100%);
+    border: 3px solid hsl(10, 15%, 20%);
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.ceres span {
+    bottom: -5px;
+}
+
+/* карусель */
+.carousel {
+    width: 200px;
+    height: 600px;
+    overflow: hidden;
+    position: sticky;
+    top: 25px;
+    margin-top: 25px;
+}
+
+.carouselTrack {
+    display: flex;
+    transition: transform 1.0s ease-in-out;
+}
+
+/* Інфобокс */
+.infoboxBG {
+    background-image: url("../зображення/простір_космосу.jpg");
+    width: 200px;
+    height: 600px;
+    position: relative;
+}
+
+.infoboxTitle {
+    background-color: white;
+    width: 180px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.infoboxTitle span {
+    /* символи */
+    height: 30px;
+    position: absolute;
+    right: 6px;
+    font-weight: bold;
+    font-family: consolas;
+    font-size: medium;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.infoboxImage {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.infoboxImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.infoboxMotto {
+    width: 200px;
+    margin-left: 0px;
+    color: white;
+    font-style: italic;
+    margin-top: 25px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.infoboxInfo {
+    color: white;
+    width: 180px;
+    margin-left: 10px;
+    font-size:80%;
+}
+
+.infoboxInfo h3 {
+    font-variant: small-caps;
+    margin: 10px 0px 0px 0px;
+}
+
+.infoboxInfo span {
+    margin-left: 5px;
+    font-family: consolas;
+}
+
+.infoboxInfo table {
+    width: 100%;
+    font-family: consolas;
+}
+
+.infoboxInfo table tr td:nth-child(3) {
+    text-align: right;
+}
+
+.infoboxFooter {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+#infoboxPause {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 1px;
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+/* Іконки індикаторів*/
+.redIndicator {
+    width: 8px;
+    height: 8px;
+    background-image: url("../зображення/червоний_індикатор.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.greenIndicator {
+    width: 8px;
+    height: 8px;
+    background-image: url("../зображення/зелений_індикатор.png");
+    background-size: cover;
+    background-position: center;
+}

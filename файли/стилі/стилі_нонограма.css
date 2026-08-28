@@ -1,0 +1,61 @@
+/* regular cells */
+#nonogram tr td
+{
+    border: 1px solid grey;
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    margin: 0; padding: 0;
+    user-select: none;
+    font-family: consolas;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    background-position: center;
+}
+
+/* 5x5 blocks */
+#nonogram tr:nth-child(5n + 6)
+{
+    border-bottom: 2px solid grey;
+}
+#nonogram tr td:nth-child(5n + 6)
+{
+    border-right: 2px solid grey;
+}
+
+/* first 6 rows and first 6 columns */
+#nonogram tr:first-child td,
+#nonogram tr:nth-child(2) td,
+#nonogram tr:nth-child(3) td,
+#nonogram tr:nth-child(4) td,
+#nonogram tr:nth-child(5) td,
+#nonogram tr:nth-child(6) td,
+#nonogram tr td:nth-child(-n + 6)
+{
+    background-color: gainsboro;
+    cursor: auto;
+}
+
+/* first 6x6 block */
+#nonogram tr:nth-child(-n+6) td:nth-child(-n+6)
+{
+    background-color: gainsboro;
+    cursor: auto;
+    border: 0px;
+}
+
+#nonogram tr:nth-child(-n+6) td:nth-child(6)
+{
+    border-right: 2px solid grey;
+}
+
+/* the table itself */
+#nonogram
+{
+    border-collapse: collapse;
+    border: none;
+    outline: 2px solid black;
+    outline-offset: -2px;
+    user-select: none; 
+}

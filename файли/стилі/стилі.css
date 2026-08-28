@@ -1,0 +1,723 @@
+/* Дефолтні контейнери */
+html {
+    height: 100%;
+    font-family: roman;
+}
+
+body {
+    height: fit-content;
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+/*    background-image: url("../зображення/фон.png"); */
+/*    background-color: #99bac2; */
+    background-color: #0c0c0c;
+    background-repeat: repeat;
+}
+
+footer
+{
+    /* margin-top: 25px; */
+}
+
+/* Загальні фільтри */
+.defaultDiv {
+    background-color: #85c7d7;
+    border: 2px solid #37879d;
+    padding: 0px 20px 20px 20px;
+}
+
+.mainShadow {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Основні елементи */
+
+/* Логотип */
+.logo {
+    height: fit-content;
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Годинники */
+.clocks {
+    max-width: 750px;
+    width: 750px;
+    margin: 0 auto;
+
+    margin-top: 0px;
+
+    padding: 5px 0px 5px 0px;
+
+    text-align: center;
+}
+
+.weather {
+    max-width: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: -32px;
+    padding: 7px 0px 7px 0px;
+    left: 500px;
+    transform: translate(-500px, 0);
+    height: 18px;
+    display: flex;
+    image-rendering: pixelated;
+}
+
+#weatherCity {
+    margin-left: 10px;
+    width: 50%;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    -webkit-font-smoothing: antialiased;
+}
+
+#weatherTemperature {
+    margin-right: 25px;
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Акаунт */
+.account {
+    height: 75px;
+    max-width: 200px;
+    width: 200px;
+    margin: 0 auto;
+
+    right: 500px;
+    transform: translate(500px, 0);
+
+    margin-top: -600px;
+    position: sticky;
+    top: 25px;
+    padding: 0;
+}
+
+.account div {
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
+/* Посилання */
+.links {
+    max-width: 200px;
+    width: 200px;
+    margin: 0 auto;
+
+    right: 500px;
+    transform: translate(500px, 0);
+
+    margin-top: 25px;
+
+    position: sticky;
+    top: 125px;
+    padding: 0;
+}
+
+.linkListHeader {
+    margin-left: 25px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.linkListElement {
+    margin-left: 40px;
+}
+
+.fakeLink {
+    text-decoration: none;
+    cursor: default;
+}
+
+.fakeLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.center {
+    max-width: 710px;
+    width: 710px;
+    margin: 0 auto;
+    margin-top: -577px;
+}
+
+.bottom {
+    padding-bottom: 1px;
+    margin-bottom: -21px;
+}
+
+/* Елементи */
+
+.trickExplosionImg {
+    height: 75%;
+}
+
+#console {
+    font-family: consolas;
+}
+
+.order {
+    text-align: right;
+    float: right;
+    color: #444;
+    font-style: italic;
+}
+
+.headerBorder {
+    border-left: 3px solid #308598;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 17%;
+    height: 75%;
+}
+
+.headerBorderFirst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 17%;
+    height: 75%;
+}
+
+.container {
+    height: 100%;
+    margin: 0;
+    background-color: transparent;
+}
+
+.radioCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+.baubleBlock {}
+
+.baubleTable {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.baubleTable tr:first-child td:first-child {
+    width: 96px;
+    height: 96px;
+}
+
+
+.baubleImage {
+    width: 96px;
+    height: 96px;
+}
+
+.baubleTitle {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.baubleTitle,
+.baubleText {
+    text-indent: 0px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+tr:has(a.baubleLink) {
+    text-align: right;
+    font-style: italic;
+}
+
+.noInd {
+    text-indent: 0px;
+}
+
+.baubleLink {}
+
+#loverBG {
+    image-rendering: pixelated;
+}
+
+#loverTimer {
+    margin-top: 15px;
+    margin-left: 10px;
+
+    text-align: center;
+    font-family: lcd;
+    color: #91f1ff;
+    text-shadow: 1px 1px 5px #247de6, -1px -1px 5px #247de6;
+
+    font-size: 42pt;
+}
+
+#loverButton {
+    width: 66px;
+    height: 63px;
+    margin-left: 321px;
+    margin-top: 95px;
+    background-color: rgba(24, 42, 114, 0.75);
+    color: white;
+    text-align: center;
+}
+
+#recipeText {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.wallpaperTable tr td {
+    width: auto;
+    height: auto;
+}
+
+.wallpaperTable tr td a img {
+    width: 100%;
+    height: 100%;
+}
+
+.bbHolder {
+    display: flex;
+    right: 500px;
+    transform: translate(500px, 0);
+
+
+    max-width: 200px;
+    width: 200px;
+    margin: 0 auto;
+
+    position: sticky;
+    top: 767px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.bottomButton {
+    width: 32px;
+    height: 32px;
+
+    margin: 0;
+    padding: 0;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
+
+.bottomButton:hover {
+    cursor: pointer;
+}
+
+#bb1 {
+    background-size: cover;
+    background-image: url("../зображення/бел.png");
+}
+
+#bb2 {
+    background-size: cover;
+    background-image: url("../зображення/лампочка.png");
+}
+
+#bb3 {
+    background-size: cover;
+    background-image: url("../зображення/електроенергія.png");
+}
+
+#bb4 {
+    background-size: cover;
+    background-image: url("../зображення/піка.png");
+}
+
+.cardHolder {
+    display: flex;
+    right: 500px;
+    transform: translate(500px, 0);
+
+
+    max-width: 200px;
+    width: 200px;
+    margin: 0 auto;
+
+    position: sticky;
+    top: 620px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.card {
+    height: 135px;
+    width: 90px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#cardFace1,
+#cardFace2 {
+    width: 90%;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    border: none;
+}
+
+.wordwrap {
+    white-space: pre-wrap;
+    /* CSS3 */
+    white-space: -moz-pre-wrap;
+    /* Firefox */
+    white-space: -pre-wrap;
+    /* Opera <7 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* IE */
+}
+
+.speechBubble {
+    position: fixed;
+    background: white;
+    color: black;
+    font-size: 1vw;
+    line-height: 1vw;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
+    border-radius: 1vw;
+    padding: 1vw;
+    border: 1px solid grey;
+
+    text-align: center;
+    text-align-last: center;
+}
+
+.speechBubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    bottom: -20px;
+    left: 80%;
+    margin-left: -5%;
+}
+
+.speechBubble:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0 21px 21px 0;
+    border-color: transparent grey transparent transparent;
+    bottom: -22px;
+    left: 80%;
+    margin-left: -5%;
+    display: block;
+}
+
+.topButton {
+    max-width: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    image-rendering: pixelated;
+}
+
+.tpholder {
+    display: flex;
+    right: 500px;
+    transform: translate(500px, 0);
+
+
+    max-width: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -32px;
+
+    position: sticky;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.customDefaultButton:hover {
+    background-color: #96daea;
+}
+
+.customDefaultButton:active {
+    background-color: #65cee7;
+}
+
+#domofon {
+    margin-left: 55px;
+    width: 600px;
+    height: 300px;
+    background-image: url('../зображення/домофон.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#domofonNumber {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 125px;
+    top: 78px;
+    pointer-events: none;
+    /*background-color: blanchedalmond;*/
+    color: #3c0000;
+    text-align: right;
+    font-family: lcd;
+    font-size: 28px;
+}
+
+.domofonButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    /*rgba(0, 250, 250, 0.75);*/
+    border: none;
+}
+
+#bookshelf {
+    background-color: #783d31;
+    border: 5px solid #783d31;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#bookshelf tr td {
+    margin: 0;
+    padding: 0;
+    background: #320d0b;
+    border-top: 1px solid #783d31;
+    border-bottom: 1px solid #783d31;
+    border-left: 5px solid #783d31;
+    border-right: 5px solid #783d31;
+    position: relative;
+    height: 100px;
+    width: 120px;
+}
+
+.bookTitle {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    background-color: darkcyan;
+
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 1vh;
+    transform-origin: 0% 100%;
+    user-select: none;
+}
+
+#rocketDiv
+{
+    width: 100%;
+    height: 3900px;
+    background-image: url("../зображення/ракета33.png");
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    image-rendering: pixelated;
+}
+
+
+
+
+.chronoTable tr td
+{
+    text-align: justify;
+    font-style: normal;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+.chronoTable tr td:nth-child(1)
+{
+    width: 22%;
+    /* text-align: center; */
+}
+
+.chronoTable tr td:nth-child(2)
+{
+    width: 78%;
+}
+.chronoTable tr:last-child td
+{
+    border: none;
+}
+
+.censored
+{
+    background-color: #000;
+    font-family: consolas;
+    user-select: none;
+}
+
+.flexDiv
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#rocketHint
+{
+    text-align: center;
+    font-style: italic;
+    color: rgb(77, 77, 77);
+    font-size: small;
+}
+#page-overlay1
+{
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 3s ease;
+    z-index: 999999;
+}
+
+#page-overlay1.active
+{
+    opacity: 1;
+}
+
+#page-overlay2
+{
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 3s ease;
+    z-index: 999999;
+}
+
+#page-overlay2.active
+{
+    opacity: 0;
+}
+
+#CERES_PAGE
+{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+}
+
+#ceresBg2
+{
+    position: fixed;
+    inset: 0;
+    background-image: url(../зображення/церера_2.jpg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 3s ease;
+    z-index: 999999;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom left;
+}
+
+#ceresBg2.active
+{
+    opacity: 1;
+}
+
+#ceresSprite
+{
+    background-image: url(../зображення/фауст.png);
+    pointer-events: auto;
+}
+
+.noselect,
+#creditsDiv,
+#ceresTextbox,
+#ceresTextbox ul,
+#ceresTextbox li {
+    pointer-events: auto;
+    text-decoration: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+#ceresTextbox li {
+    cursor: pointer;
+    width: fit-content;
+}
+
+#ceresTextbox li:hover {
+    color: gainsboro;
+    text-decoration: underline;
+}
+
+#creditsDiv
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+    z-index: 1000000;
+    background-color: black;
+    color: white;
+    font-family: roman;
+    text-align: center;
+}
+
+/*
+{
+    border: 1px solid red;
+}

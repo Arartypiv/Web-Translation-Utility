@@ -1,0 +1,31 @@
+/* Шрифти */
+@font-face
+{
+  font-family: lcd;
+  src: url('../шрифти/lcd.ttf');
+}
+@font-face
+{
+  font-family: roman;
+  src: url('../шрифти/roman.ttf');
+}
+@font-face
+{
+  font-family: consolas;
+  src: url('../шрифти/consolas.ttf');
+}
+@font-face
+{
+  font-family: comic;
+  src: url('../шрифти/comic.ttf');
+}
+@font-face
+{
+  font-family: segoe;
+  src: url('../шрифти/segoe.ttf');
+}
+@font-face
+{
+  font-family: dos;
+  src: url('../шрифти/dos.ttf');
+}
