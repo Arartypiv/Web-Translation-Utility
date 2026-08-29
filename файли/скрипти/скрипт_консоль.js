@@ -20,7 +20,7 @@ function WriteInitText()
 {
     ProcessCommand("cls");
     document.getElementById("consoleLog").value = `web-translation utility [Version 2.0.1-S]
-(c) Mikprofi Digital Giggles. All rights reserved.
+(c) VAI Scientific Research Department. All rights reserved.
 
 C:\> `;
 }
