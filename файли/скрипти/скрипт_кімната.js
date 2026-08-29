@@ -103,7 +103,8 @@ async function room_CreateHitbox()
 
 
     // create canvas
-    roomCTX = roomHitbox.getContext("2d");
+    // roomCTX = roomHitbox.getContext("2d");
+    roomCTX = roomHitbox.getContext("2d", { colorSpace: "srgb" });
     roomCTX.imageSmoothingEnabled = false;
     roomHitbox.width = 800;
     roomHitbox.height = 600;
@@ -141,7 +142,9 @@ function room_CreateCover()
 
 function room_GetColourAt(x, y, context = roomCTX)
 {
-    const pixel = context.getImageData(x, y, 1, 1).data;
+    //const pixel = context.getImageData(x, y, 1, 1).data;
+    const pixel = context.getImageData(x, y, 1, 1, { colorSpace: "srgb" }).data;
+
     let [r, g, b, a] = pixel;
     r = r.toString(16).length == 1 ? "0" + r.toString(16) : r.toString(16);;
     g = g.toString(16).length == 1 ? "0" + g.toString(16) : g.toString(16);;
