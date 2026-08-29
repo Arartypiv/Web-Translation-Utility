@@ -156,18 +156,18 @@ function room_GetColourAt(x, y, context = roomCTX)
 const colour_to_object =
 { 
      "#ff0000": "exit", 
-     "#ff8800": "painting", 
+     "#ff8800": "carpet", 
      "#ffff00": "chandelier", 
      "#00ff00": "curtain", 
      "#00ffff": "wallLight", 
-     "#0088ff": "carpet",
+     "#0088ff": "painting",
      "#008888": "blackVase",
      "#0000ff": "statuette",
-     "#ff88ff": "chair",
+     "#ff88ff": "paintingInteractable",
      "#ff00ff": "greenVase",
      "#8800ff": "table",
      "#ffffff": "ceiling",
-     "#888888": "paintingInteractable",
+     "#888888": "chair",
      "#000000": "nothing"
 };
 
